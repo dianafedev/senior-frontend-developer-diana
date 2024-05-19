@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .app-logo {
+    height: 40px;
+  }
+
+  .section-hero {
+    position: relative;
+    height: 695px;
+    background-color: rgba(252, 238, 213, 1);
+    background-image: url('@/assets/images/rectangle-2.png'),
+      url('@/assets/images/rectangle-1.png'),
+      url('@/assets/images/rectangle-3.png'),
+      url('@/assets/images/rectangle-8.png'),
+      url('@/assets/images/rectangle-9.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 95% 90%, 84% 100%, 7% 30%, 0% 95%, left top;
+    // background-size: 635px, 635px, 607px;
+    border-radius: 0px 0px 40px 40px;
+    .card-left {
+      height: 695px;
+    }
+    .card-right {
+      .woman {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        img {
+          width: 100%;
+          height: 593px;
+        }
+      }
+    }
+  }
+
+  .section-banner {
+    height: 378px;
+    position: relative;
+    background-image: url('@/assets/images/banner/rectangle-1.png'), url('@/assets/images/banner/rectangle-9.png');
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    .card-left {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .section-banner-two {
+    height: 378px;
+    position: relative;
+    background-image: url('@/assets/images/banner/rectangle-10.png'), url('@/assets/images/banner/rectangle-2.png');
+    background-repeat: no-repeat;
+    background-position: left center, right bottom;
+    .card-right {
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .section-footer {
+    height: auto;
+  }
+}
+
+@layer utilities {
+  .padding-button {
+    padding: 14px 28px 14px 28px;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+}

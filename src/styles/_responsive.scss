@@ -1,0 +1,29 @@
+@media (max-width: 576px) {
+  .section-hero {
+    height: 100% !important;
+    background-image: url('@/assets/images/mobile/rectangle-2.png'),
+      url('@/assets/images/mobile/rectangle-1.png'),
+      url('@/assets/images/mobile/rectangle-3.png'),
+      url('@/assets/images/mobile/rectangle-8.png'),
+      url('@/assets/images/mobile/rectangle-9.png');
+    background-position: 95% 100%, 84% 100%, 10% 30%, 0% 95%, left top;
+    .card-left {
+      margin-top: 80px;
+      height: 380px;
+    }
+    .card-right {
+      height: 320px;
+      .woman {
+        right: 0px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .padding-button {
+    padding: 12px 16px 12px 16px;
+  }
+}
